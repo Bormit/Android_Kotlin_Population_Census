@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".onboard.SlideActivity">
-
+    tools:context=".onboard.ViewPagerFragment">
 
     <TextView
         android:id="@+id/population_"
@@ -45,21 +44,19 @@
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPager"
-        android:name="ru.mirea.populationcensus.FirstOnboard"
         android:layout_width="match_parent"
         android:layout_height="500dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline"
-        tools:layout="@layout/fragment_first_onboard" />
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
 
     <ImageView
         android:id="@+id/page1"
         android:layout_width="10dp"
         android:layout_height="10dp"
         android:layout_alignParentTop="true"
-        app:layout_constraintBottom_toTopOf="@+id/next_button1"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/page2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
@@ -93,23 +90,11 @@
         app:layout_constraintTop_toTopOf="@+id/page2"
         app:srcCompat="@drawable/selected" />
 
-    <Button
-        android:id="@+id/next_button1"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginBottom="24dp"
-        android:text="@string/next"
-        app:backgroundTint="@color/HavelockBlue"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="584dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

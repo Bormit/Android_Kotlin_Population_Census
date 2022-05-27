@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android/Sdk/platforms/android-31/data/res/layout/activity_list_item.xml" value="0.371875" />
         <entry key="..\:/WORK/PopulationCensus/app/src/main/res/drawable/selected.xml" value="0.22685185185185186" />
         <entry key="..\:/WORK/PopulationCensus/app/src/main/res/drawable/splashscreen.xml" value="0.3880208333333333" />
         <entry key="..\:/WORK/PopulationCensus/app/src/main/res/drawable/unselected.xml" value="0.3880208333333333" />
@@ -12,9 +13,13 @@
         <entry key="..\:/WORK/PopulationCensus/app/src/main/res/font/raleway.xml" value="0.3388888888888889" />
         <entry key="..\:/WORK/PopulationCensus/app/src/main/res/layout/activity_main.xml" value="0.2694746376811594" />
         <entry key="..\:/WORK/PopulationCensus/app/src/main/res/layout/activity_slide.xml" value="0.33" />
-        <entry key="..\:/WORK/PopulationCensus/app/src/main/res/layout/fragment_first_onboard.xml" value="0.28306159420289856" />
-        <entry key="..\:/WORK/PopulationCensus/app/src/main/res/layout/fragment_sec_onboard.xml" value="0.371875" />
+        <entry key="..\:/WORK/PopulationCensus/app/src/main/res/layout/fragment_first_onboard.xml" value="0.33" />
+        <entry key="..\:/WORK/PopulationCensus/app/src/main/res/layout/fragment_home.xml" value="0.371875" />
+        <entry key="..\:/WORK/PopulationCensus/app/src/main/res/layout/fragment_sec_onboard.xml" value="0.25" />
+        <entry key="..\:/WORK/PopulationCensus/app/src/main/res/layout/fragment_splash.xml" value="0.371875" />
+        <entry key="..\:/WORK/PopulationCensus/app/src/main/res/layout/fragment_splash2.xml" value="0.371875" />
         <entry key="..\:/WORK/PopulationCensus/app/src/main/res/layout/fragment_third_onboard.xml" value="0.371875" />
+        <entry key="..\:/WORK/PopulationCensus/app/src/main/res/layout/fragment_view_pager.xml" value="0.33" />
       </map>
     </option>
   </component>

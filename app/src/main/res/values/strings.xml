@@ -4,5 +4,21 @@
     <string name="skip">Пропустить</string>
     <string name="next">Следующий</string>
     <!-- TODO: Remove or change this placeholder text -->
+    <string name="text_main_fragment1">Возможность участвовать в переписи населения</string>
+    <string name="text_about_fragment1">В нашем приложении каждый гражданин
+может принять участие в переписи населения,
+ где бы он не находился.
+</string>
+    <string name="text_main_fragment2">Следите за переписью населения в реальном времени</string>
+    <string name="text_about_fragment2">
+        Хотите следить за переписью населения?\n
+        За всем можно следить здесь, все анкеты появляются здесь в реальном времени, каждый город отдельно.
+</string>
+    <string name="text_main_fragment3">Узнайте актуальную информацию по вашему городу</string>
+    <string name="text_about_fragment3">
+        Просматривайте статистику по каждому городу отдельно.\n
+        Узнавайте информацию про население и про его конкретные показатели.
+</string>
+    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
