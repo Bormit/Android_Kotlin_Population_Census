@@ -35,28 +35,6 @@ class ViewPagerFragment : Fragment() {
             lifecycle
         )
 
-        val page1 = view.findViewById<ImageView>(R.id.page1)
-        val page2 = view.findViewById<ImageView>(R.id.page2)
-        val page3 = view.findViewById<ImageView>(R.id.page3)
-
-        if (ViewPagerAdapter(fragmentList, requireActivity().supportFragmentManager, lifecycle).createFragment(0) == fragmentList[0]){
-            page1.setImageResource(R.drawable.selected)
-            page2.setImageResource(R.drawable.unselected)
-            page3.setImageResource(R.drawable.unselected)
-        }
-
-        if (ViewPagerAdapter(fragmentList, requireActivity().supportFragmentManager, lifecycle).createFragment(1) == fragmentList[0]){
-            page1.setImageResource(R.drawable.unselected)
-            page2.setImageResource(R.drawable.selected)
-            page3.setImageResource(R.drawable.unselected)
-        }
-
-        if (ViewPagerAdapter(fragmentList, requireActivity().supportFragmentManager, lifecycle).createFragment(2) == fragmentList[0]){
-            page1.setImageResource(R.drawable.unselected)
-            page2.setImageResource(R.drawable.unselected)
-            page3.setImageResource(R.drawable.selected)
-        }
-
         view.findViewById<ViewPager2>(R.id.viewPager).adapter = adapter
 
         return view
