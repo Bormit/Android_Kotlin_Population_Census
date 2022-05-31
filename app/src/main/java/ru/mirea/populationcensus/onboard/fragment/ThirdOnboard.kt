@@ -23,7 +23,7 @@ class ThirdOnboard : Fragment() {
         val view =  inflater.inflate(R.layout.fragment_third_onboard, container, false)
 
         view.findViewById<Button>(R.id.next_button_fragment3).setOnClickListener{
-            findNavController().navigate(R.id.action_viewPagerFragment_to_homeFragment)
+            findNavController().navigate(R.id.action_viewPagerFragment_to_bottomNavigation)
             onBoardingFinished()
         }
 

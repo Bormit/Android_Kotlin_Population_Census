@@ -39,7 +39,7 @@ class ViewPagerFragment : Fragment() {
         )
 
         view.findViewById<TextView>(R.id.skip).setOnClickListener{
-            findNavController().navigate(R.id.action_viewPagerFragment_to_homeFragment)
+            findNavController().navigate(R.id.action_viewPagerFragment_to_bottomNavigation)
             onBoardingFinished()
         }
 
