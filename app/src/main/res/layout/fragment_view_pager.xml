@@ -16,7 +16,6 @@
         android:lineSpacingExtra="8sp"
         android:text="@string/population_"
         android:textAppearance="@style/population_"
-        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -30,7 +29,6 @@
         android:lineSpacingExtra="5sp"
         android:text="@string/skip"
         android:textAppearance="@style/skip"
-        android:textStyle="bold"
         android:translationY="-2.61sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

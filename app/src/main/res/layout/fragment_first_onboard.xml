@@ -28,7 +28,6 @@
         android:text="@string/text_main_fragment1"
         android:textAppearance="@style/population_"
         android:textSize="24sp"
-        android:textStyle="bold"
         android:translationY="-5.91sp"
         app:layout_constraintBottom_toTopOf="@+id/text_about_fragment1"
         app:layout_constraintEnd_toEndOf="parent"
