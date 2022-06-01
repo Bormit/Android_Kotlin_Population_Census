@@ -4,7 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Android/Sdk/platforms/android-31/data/res/layout/activity_list_item.xml" value="0.371875" />
-        <entry key="..\:/WORK/PopulationCensus/app/src/main/res/drawable/menu.xml" value="0.7265625" />
+        <entry key="..\:/WORK/PopulationCensus/app/src/main/res/drawable/bottom_nav_selector.xml" value="0.291015625" />
+        <entry key="..\:/WORK/PopulationCensus/app/src/main/res/drawable/ic_home.xml" value="0.291015625" />
+        <entry key="..\:/WORK/PopulationCensus/app/src/main/res/drawable/ic_info.xml" value="0.291015625" />
+        <entry key="..\:/WORK/PopulationCensus/app/src/main/res/drawable/ic_person.xml" value="0.291015625" />
+        <entry key="..\:/WORK/PopulationCensus/app/src/main/res/drawable/menu.xml" value="0.25" />
         <entry key="..\:/WORK/PopulationCensus/app/src/main/res/drawable/selected.xml" value="0.22685185185185186" />
         <entry key="..\:/WORK/PopulationCensus/app/src/main/res/drawable/splashscreen.xml" value="0.3880208333333333" />
         <entry key="..\:/WORK/PopulationCensus/app/src/main/res/drawable/unselected.xml" value="0.3880208333333333" />
@@ -16,10 +20,12 @@
         <entry key="..\:/WORK/PopulationCensus/app/src/main/res/font/roboto_bold.xml" value="0.6865234375" />
         <entry key="..\:/WORK/PopulationCensus/app/src/main/res/layout/activity_main.xml" value="0.2694746376811594" />
         <entry key="..\:/WORK/PopulationCensus/app/src/main/res/layout/activity_slide.xml" value="0.33" />
-        <entry key="..\:/WORK/PopulationCensus/app/src/main/res/layout/fragment_bottom_navigation.xml" value="0.22749391727493917" />
+        <entry key="..\:/WORK/PopulationCensus/app/src/main/res/layout/fragment_bottom_navigation.xml" value="0.22" />
         <entry key="..\:/WORK/PopulationCensus/app/src/main/res/layout/fragment_first_onboard.xml" value="0.25" />
         <entry key="..\:/WORK/PopulationCensus/app/src/main/res/layout/fragment_home.xml" value="0.22" />
+        <entry key="..\:/WORK/PopulationCensus/app/src/main/res/layout/fragment_info_of_app.xml" value="0.27890625" />
         <entry key="..\:/WORK/PopulationCensus/app/src/main/res/layout/fragment_list_of_form.xml" value="0.24391727493917276" />
+        <entry key="..\:/WORK/PopulationCensus/app/src/main/res/layout/fragment_profile.xml" value="0.27890625" />
         <entry key="..\:/WORK/PopulationCensus/app/src/main/res/layout/fragment_sec_onboard.xml" value="0.25" />
         <entry key="..\:/WORK/PopulationCensus/app/src/main/res/layout/fragment_splash.xml" value="0.371875" />
         <entry key="..\:/WORK/PopulationCensus/app/src/main/res/layout/fragment_splash2.xml" value="0.371875" />

@@ -5,8 +5,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.fragment.findNavController
-import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class BottomNavigation : Fragment() {
@@ -36,8 +34,16 @@ class BottomNavigation : Fragment() {
                         ?.replace(R.id.containerFragment,ListOfForm())
                         ?.commit()
                 }
-//                R.id.homeFragment -> {}
-//                R.id.homeFragment -> {}
+                R.id.infoOfApp -> {
+                    activity?.supportFragmentManager?.beginTransaction()
+                        ?.replace(R.id.containerFragment,InfoOfApp())
+                        ?.commit()
+                }
+                R.id.profileFragment -> {
+                    activity?.supportFragmentManager?.beginTransaction()
+                        ?.replace(R.id.containerFragment,Profile())
+                        ?.commit()
+                }
             }
             true
         }
