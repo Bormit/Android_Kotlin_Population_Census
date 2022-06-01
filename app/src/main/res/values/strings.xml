@@ -3,7 +3,6 @@
     <string name="population_">POPULATION\nCENSUS</string>
     <string name="skip">Пропустить</string>
     <string name="next">Следующий</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="text_main_fragment1">Возможность участвовать в переписи населения</string>
     <string name="text_about_fragment1">В нашем приложении каждый гражданин
 может принять участие в переписи населения,
@@ -19,6 +18,10 @@
         Просматривайте статистику по каждому городу отдельно.\n
         Узнавайте информацию про население и про его конкретные показатели.
 </string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="main_title">Главная страница</string>
+    <string name="hiUser">Привет Name,</string>
+    <string name="mainQuestion">Вы уже заполнили анкету?</string>
+    <string name="services">Услуги</string>
+    <string name="service1">Просмотр анкет</string>
+    <string name="service2">Статистика</string>
 </resources>
