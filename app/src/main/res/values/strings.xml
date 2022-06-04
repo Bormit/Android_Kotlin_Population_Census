@@ -59,4 +59,11 @@
         <item>Разведены</item>
         <item>Не в браке</item>
     </string-array>
+    <string name="logTitle">Population census</string>
+    <string name="login">Login</string>
+    <string name="logText">Хотите зарегистрироваться?</string>
+    <string name="logReg">Регистрация</string>
+    <string name="regTitle">POPULATION CENSUS</string>
+    <string name="regRegis">Register</string>
+    <string name="regAuth">Авторизоваться</string>
 </resources>

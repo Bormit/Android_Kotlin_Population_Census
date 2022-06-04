@@ -50,10 +50,31 @@
         <action
             android:id="@+id/action_bottomNavigation_to_createForm2"
             app:destination="@id/createForm2" />
+        <action
+            android:id="@+id/action_bottomNavigation_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_bottomNavigation_to_regFragment"
+            app:destination="@id/regFragment" />
     </fragment>
     <fragment
         android:id="@+id/createForm2"
         android:name="ru.mirea.populationcensus.CreateForm"
         android:label="fragment_create_form"
         tools:layout="@layout/fragment_create_form" />
+    <fragment
+        android:id="@+id/profile"
+        android:name="ru.mirea.populationcensus.Profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="ru.mirea.populationcensus.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/regFragment"
+        android:name="ru.mirea.populationcensus.RegFragment"
+        android:label="fragment_reg"
+        tools:layout="@layout/fragment_reg" />
 </navigation>

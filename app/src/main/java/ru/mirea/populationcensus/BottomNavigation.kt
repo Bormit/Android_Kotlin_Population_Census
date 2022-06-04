@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class BottomNavigation : Fragment() {
-
+    private var flag = 0
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -16,16 +16,40 @@ class BottomNavigation : Fragment() {
     ): View? {
 
         val view = inflater.inflate(R.layout.fragment_bottom_navigation, container, false)
-
-        if (savedInstanceState == null){
-            activity?.supportFragmentManager?.beginTransaction()
-                ?.replace(R.id.containerFragment,HomeFragment())
-                ?.commit()
-        }
-
         val menu = view.findViewById<BottomNavigationView>(R.id.bottomNavigationView)
 
-        menu.selectedItemId = R.id.homeFragment
+        when(flag){
+            1 ->{
+                activity?.supportFragmentManager?.beginTransaction()
+                    ?.replace(R.id.containerFragment,HomeFragment())
+                    ?.commit()
+                menu.selectedItemId = R.id.homeFragment
+            }
+            2 ->{
+                activity?.supportFragmentManager?.beginTransaction()
+                    ?.replace(R.id.containerFragment,ListOfForm())
+                    ?.commit()
+                menu.selectedItemId = R.id.listOfForm
+            }
+            3 ->{
+                activity?.supportFragmentManager?.beginTransaction()
+                    ?.replace(R.id.containerFragment,InfoOfApp())
+                    ?.commit()
+                menu.selectedItemId = R.id.infoOfApp
+            }
+            4 ->{
+                activity?.supportFragmentManager?.beginTransaction()
+                    ?.replace(R.id.containerFragment,Profile())
+                    ?.commit()
+                menu.selectedItemId = R.id.profileFragment
+            }
+            else ->{
+                activity?.supportFragmentManager?.beginTransaction()
+                    ?.replace(R.id.containerFragment,HomeFragment())
+                    ?.commit()
+                menu.selectedItemId = R.id.homeFragment
+            }
+        }
 
         menu.setOnNavigationItemSelectedListener {
 
@@ -34,21 +58,25 @@ class BottomNavigation : Fragment() {
                     activity?.supportFragmentManager?.beginTransaction()
                         ?.replace(R.id.containerFragment,HomeFragment())
                         ?.commit()
+                    flag = 1
                 }
                 R.id.listOfForm -> {
                     activity?.supportFragmentManager?.beginTransaction()
                         ?.replace(R.id.containerFragment,ListOfForm())
                         ?.commit()
+                    flag = 2
                 }
                 R.id.infoOfApp -> {
                     activity?.supportFragmentManager?.beginTransaction()
                         ?.replace(R.id.containerFragment,InfoOfApp())
                         ?.commit()
+                    flag = 3
                 }
                 R.id.profileFragment -> {
                     activity?.supportFragmentManager?.beginTransaction()
                         ?.replace(R.id.containerFragment,Profile())
                         ?.commit()
+                    flag = 4
                 }
             }
             true
