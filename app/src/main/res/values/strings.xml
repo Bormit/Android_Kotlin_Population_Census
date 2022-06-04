@@ -25,4 +25,7 @@
     <string name="service1">Создание анкеты</string>
     <string name="service2">Статистика</string>
     <string name="list_title">Список анкет</string>
+    <string name="info_about">Ответы на вопросы</string>
+    <string name="profile">Личный аккаунт</string>
+    <string name="welcome">Привет Nick</string>
 </resources>

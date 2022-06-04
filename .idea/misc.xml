@@ -7,9 +7,11 @@
         <entry key="..\:/WORK/PopulationCensus/app/src/main/res/drawable-v24/rec.xml" value="0.291015625" />
         <entry key="..\:/WORK/PopulationCensus/app/src/main/res/drawable/banner.xml" value="0.291015625" />
         <entry key="..\:/WORK/PopulationCensus/app/src/main/res/drawable/bottom_nav_selector.xml" value="0.291015625" />
+        <entry key="..\:/WORK/PopulationCensus/app/src/main/res/drawable/clc.xml" value="0.291015625" />
         <entry key="..\:/WORK/PopulationCensus/app/src/main/res/drawable/ic_home.xml" value="0.291015625" />
         <entry key="..\:/WORK/PopulationCensus/app/src/main/res/drawable/ic_info.xml" value="0.291015625" />
         <entry key="..\:/WORK/PopulationCensus/app/src/main/res/drawable/ic_person.xml" value="0.291015625" />
+        <entry key="..\:/WORK/PopulationCensus/app/src/main/res/drawable/info.xml" value="0.291015625" />
         <entry key="..\:/WORK/PopulationCensus/app/src/main/res/drawable/list.xml" value="0.291015625" />
         <entry key="..\:/WORK/PopulationCensus/app/src/main/res/drawable/menu.xml" value="0.25" />
         <entry key="..\:/WORK/PopulationCensus/app/src/main/res/drawable/selected.xml" value="0.22685185185185186" />
@@ -33,7 +35,7 @@
         <entry key="..\:/WORK/PopulationCensus/app/src/main/res/layout/fragment_home.xml" value="0.25" />
         <entry key="..\:/WORK/PopulationCensus/app/src/main/res/layout/fragment_info_of_app.xml" value="0.27890625" />
         <entry key="..\:/WORK/PopulationCensus/app/src/main/res/layout/fragment_list_of_form.xml" value="0.25" />
-        <entry key="..\:/WORK/PopulationCensus/app/src/main/res/layout/fragment_profile.xml" value="0.27890625" />
+        <entry key="..\:/WORK/PopulationCensus/app/src/main/res/layout/fragment_profile.xml" value="0.33" />
         <entry key="..\:/WORK/PopulationCensus/app/src/main/res/layout/fragment_sec_onboard.xml" value="0.25" />
         <entry key="..\:/WORK/PopulationCensus/app/src/main/res/layout/fragment_splash.xml" value="0.371875" />
         <entry key="..\:/WORK/PopulationCensus/app/src/main/res/layout/fragment_splash2.xml" value="0.371875" />
