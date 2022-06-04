@@ -28,4 +28,35 @@
     <string name="info_about">Ответы на вопросы</string>
     <string name="profile">Личный аккаунт</string>
     <string name="welcome">Привет Nick</string>
+    <string name="ques1"><b>Что такое перепись населения в России?</b>\n
+        Собирается информация о всех жителях России, об их возрасте, городе, семейном положении, поле.
+        Все это хранится в нашем приложении.
+    </string>
+    <string name="ques2"><b>Кто имеет право участвовать в переписи?</b>\n
+        В соответствии с законом, приложение собирает информацию обо всех жителях России вне зависимости от гражданства, а также о гражданах России, которые постоянно проживают в России, но находятся на дату переписи за пределами страны.
+    </string>
+    <string name="ques3"><b>Надо ли называть имя, фамилию и отчество?</b>\n
+        Приложению необходимо спросить имя, чтобы знать, как обращаться к респонденту и исключить путаницу.
+    </string>
+    <string name="infoProfile">Вход</string>
+    <string name="infoProfile2">Регистрация</string>
+    <string name="infoProfile3">Выход</string>
+    <string name="create_title">Создание анкеты</string>
+    <string name="createCity">Город</string>
+    <string name="createClc">Location</string>
+    <string name="createSex">Пол</string>
+    <string name="createAge">Возраст</string>
+    <string name="createFamily">Семейное\nположение</string>
+    <string name="createForm">Оставить анкету</string>
+    <string-array name="spinnerSex">
+        <item>М</item>
+        <item>Ж</item>
+        <item>None</item>
+    </string-array>
+    <string-array name="spinnerFamily">
+        <item>Женат</item>
+        <item>Замужем</item>
+        <item>Разведены</item>
+        <item>Не в браке</item>
+    </string-array>
 </resources>

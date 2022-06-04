@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import androidx.navigation.fragment.findNavController
 
 class HomeFragment : Fragment() {
 
@@ -21,6 +23,11 @@ class HomeFragment : Fragment() {
     ): View? {
 
         val view = inflater.inflate(R.layout.fragment_home, container, false)
+
+        val service = view.findViewById<ImageView>(R.id.image_service1)
+        service.setOnClickListener {
+            findNavController().navigate(R.id.action_bottomNavigation_to_createForm2)
+        }
 
         return view
     }
