@@ -10,4 +10,9 @@ class MainActivity : AppCompatActivity() {
 
         supportActionBar?.hide()
     }
+    override fun onDestroy() {
+        super.onDestroy()
+        val sharedPref = this.getPreferences(MODE_PRIVATE)
+        sharedPref.edit().remove("login").apply()
+    }
 }

@@ -1,5 +1,6 @@
 package ru.mirea.populationcensus
 
+import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -38,10 +39,18 @@ class BottomNavigation : Fragment() {
                 menu.selectedItemId = R.id.infoOfApp
             }
             4 ->{
-                activity?.supportFragmentManager?.beginTransaction()
-                    ?.replace(R.id.containerFragment,Profile())
-                    ?.commit()
-                menu.selectedItemId = R.id.profileFragment
+                val sharedPref = activity?.getPreferences(Context.MODE_PRIVATE)
+                val login = sharedPref?.getString("login", "Пользователь")
+                if (login != "Пользователь"){
+                    activity?.supportFragmentManager?.beginTransaction()
+                        ?.replace(R.id.containerFragment,UserProfile())
+                        ?.commit()
+                }else{
+                    activity?.supportFragmentManager?.beginTransaction()
+                        ?.replace(R.id.containerFragment,Profile())
+                        ?.commit()
+                }
+                menu.selectedItemId = R.id.profileUser
             }
             else ->{
                 activity?.supportFragmentManager?.beginTransaction()
@@ -72,10 +81,18 @@ class BottomNavigation : Fragment() {
                         ?.commit()
                     flag = 3
                 }
-                R.id.profileFragment -> {
-                    activity?.supportFragmentManager?.beginTransaction()
-                        ?.replace(R.id.containerFragment,Profile())
-                        ?.commit()
+                R.id.profileUser -> {
+                    val sharedPref = activity?.getPreferences(Context.MODE_PRIVATE)
+                    val login = sharedPref?.getString("login", "Пользователь")
+                    if (login != "Пользователь"){
+                        activity?.supportFragmentManager?.beginTransaction()
+                            ?.replace(R.id.containerFragment,UserProfile())
+                            ?.commit()
+                    }else{
+                        activity?.supportFragmentManager?.beginTransaction()
+                            ?.replace(R.id.containerFragment,Profile())
+                            ?.commit()
+                    }
                     flag = 4
                 }
             }

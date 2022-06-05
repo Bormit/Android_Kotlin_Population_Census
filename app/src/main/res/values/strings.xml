@@ -19,7 +19,7 @@
         Узнавайте информацию про население и про его конкретные показатели.
 </string>
     <string name="main_title">Главная страница</string>
-    <string name="hiUser">Привет Пользователь,</string>
+    <string name="hiUser">Привет,</string>
     <string name="mainQuestion">Вы уже заполнили анкету?</string>
     <string name="services">Услуги</string>
     <string name="service1">Создание анкеты</string>
@@ -27,7 +27,7 @@
     <string name="list_title">Список анкет</string>
     <string name="info_about">Ответы на вопросы</string>
     <string name="profile">Личный аккаунт</string>
-    <string name="welcome">Привет Пользователь</string>
+    <string name="welcome">Привет</string>
     <string name="ques1"><b>Что такое перепись населения в России?</b>\n
         Собирается информация о всех жителях России, об их возрасте, городе, семейном положении, поле.
         Все это хранится в нашем приложении.
@@ -68,4 +68,5 @@
     <string name="regAuth">Авторизоваться</string>
     <string name="WelcomeTitle">Welcome</string>
     <string name="WelcomeUser">Пользователь</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

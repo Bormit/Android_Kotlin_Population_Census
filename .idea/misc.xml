@@ -34,16 +34,17 @@
         <entry key="..\:/WORK/PopulationCensus/app/src/main/res/layout/fragment_bottom_navigation.xml" value="0.22" />
         <entry key="..\:/WORK/PopulationCensus/app/src/main/res/layout/fragment_create_form.xml" value="0.33" />
         <entry key="..\:/WORK/PopulationCensus/app/src/main/res/layout/fragment_first_onboard.xml" value="0.25" />
-        <entry key="..\:/WORK/PopulationCensus/app/src/main/res/layout/fragment_home.xml" value="0.5" />
+        <entry key="..\:/WORK/PopulationCensus/app/src/main/res/layout/fragment_home.xml" value="0.33" />
         <entry key="..\:/WORK/PopulationCensus/app/src/main/res/layout/fragment_info_of_app.xml" value="0.27890625" />
         <entry key="..\:/WORK/PopulationCensus/app/src/main/res/layout/fragment_list_of_form.xml" value="0.25" />
         <entry key="..\:/WORK/PopulationCensus/app/src/main/res/layout/fragment_login.xml" value="0.25" />
-        <entry key="..\:/WORK/PopulationCensus/app/src/main/res/layout/fragment_profile.xml" value="0.25" />
+        <entry key="..\:/WORK/PopulationCensus/app/src/main/res/layout/fragment_profile.xml" value="0.33" />
         <entry key="..\:/WORK/PopulationCensus/app/src/main/res/layout/fragment_reg.xml" value="0.25" />
         <entry key="..\:/WORK/PopulationCensus/app/src/main/res/layout/fragment_sec_onboard.xml" value="0.25" />
         <entry key="..\:/WORK/PopulationCensus/app/src/main/res/layout/fragment_splash.xml" value="0.371875" />
         <entry key="..\:/WORK/PopulationCensus/app/src/main/res/layout/fragment_splash2.xml" value="0.371875" />
         <entry key="..\:/WORK/PopulationCensus/app/src/main/res/layout/fragment_third_onboard.xml" value="0.25" />
+        <entry key="..\:/WORK/PopulationCensus/app/src/main/res/layout/fragment_user_profile.xml" value="0.25" />
         <entry key="..\:/WORK/PopulationCensus/app/src/main/res/layout/fragment_view_pager.xml" value="0.22" />
         <entry key="..\:/WORK/PopulationCensus/app/src/main/res/layout/fragment_welcome.xml" value="0.27890625" />
         <entry key="..\:/WORK/PopulationCensus/app/src/main/res/layout/recyclerview_item.xml" value="0.27890625" />

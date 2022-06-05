@@ -94,7 +94,20 @@
         android:label="fragment_welcome"
         tools:layout="@layout/fragment_welcome" >
         <action
-            android:id="@+id/action_welcomeFragment_to_profile"
-            app:destination="@id/profile" />
+            android:id="@+id/action_welcomeFragment_to_bottomNavigation"
+            app:destination="@id/bottomNavigation"
+            app:popUpTo="@id/welcomeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/userProfile2"
+        android:name="ru.mirea.populationcensus.UserProfile"
+        android:label="fragment_user_profile"
+        tools:layout="@layout/fragment_user_profile" >
+        <action
+            android:id="@+id/action_userProfile2_to_bottomNavigation"
+            app:destination="@id/bottomNavigation"
+            app:popUpTo="@id/userProfile2"
+            app:popUpToInclusive="true" />
     </fragment>
 </navigation>

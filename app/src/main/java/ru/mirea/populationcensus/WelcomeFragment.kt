@@ -29,15 +29,15 @@ class WelcomeFragment : Fragment() {
 
         val sharedPref = activity?.getPreferences(Context.MODE_PRIVATE)
         val login = sharedPref?.getString("login", "Пользователь")
-        if (login!="Пользователь"){
+        if (login != "Пользователь"){
             welcomeUser.text = login
         }else{
             welcomeUser.text = login
         }
 
         Handler().postDelayed({
-            findNavController().navigate(R.id.action_welcomeFragment_to_profile)
-        }, 5000)
+            findNavController().navigate(R.id.action_welcomeFragment_to_bottomNavigation)
+        }, 3000)
 
         return view
     }
