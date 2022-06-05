@@ -66,4 +66,6 @@
     <string name="regTitle">POPULATION CENSUS</string>
     <string name="regRegis">Register</string>
     <string name="regAuth">Авторизоваться</string>
+    <string name="WelcomeTitle">Welcome</string>
+    <string name="WelcomeUser">Пользователь</string>
 </resources>

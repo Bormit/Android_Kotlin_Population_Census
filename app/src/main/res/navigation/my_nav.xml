@@ -75,6 +75,9 @@
         <action
             android:id="@+id/action_loginFragment_to_regFragment"
             app:destination="@id/regFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
     </fragment>
     <fragment
         android:id="@+id/regFragment"
@@ -84,5 +87,14 @@
         <action
             android:id="@+id/action_regFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="ru.mirea.populationcensus.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_profile"
+            app:destination="@id/profile" />
     </fragment>
 </navigation>
