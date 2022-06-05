@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/createFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CreateForm">
@@ -10,9 +11,9 @@
         android:id="@+id/createTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="@style/population_"
         android:layout_marginTop="32dp"
         android:text="@string/create_title"
+        android:textAppearance="@style/population_"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -21,13 +22,13 @@
         android:id="@+id/createCity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="125dp"
         android:layout_alignParentStart="true"
+        android:layout_marginTop="125dp"
+        android:gravity="top"
+        android:lineSpacingExtra="4sp"
         android:text="@string/createCity"
         android:textAppearance="@style/createCity"
-        android:lineSpacingExtra="4sp"
         android:translationY="-1.91sp"
-        android:gravity="top"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.06"
         app:layout_constraintStart_toStartOf="parent"
@@ -105,9 +106,9 @@
 
             <androidx.appcompat.widget.AppCompatSpinner
                 android:id="@+id/spinnerSex"
-                android:entries="@array/spinnerSex"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:entries="@array/spinnerSex"
                 android:singleLine="true" />
         </androidx.cardview.widget.CardView>
 
@@ -169,9 +170,9 @@
 
             <androidx.appcompat.widget.AppCompatSpinner
                 android:id="@+id/spinnerFamily"
-                android:entries="@array/spinnerFamily"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:entries="@array/spinnerFamily"
                 android:singleLine="true" />
         </androidx.cardview.widget.CardView>
 

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "76949132515",
+    "firebase_url": "https://kotlin-population-default-rtdb.firebaseio.com",
+    "project_id": "kotlin-population",
+    "storage_bucket": "kotlin-population.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:76949132515:android:208b9d0c98eb88920921d6",
+        "android_client_info": {
+          "package_name": "ru.mirea.populationcensus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "76949132515-v6637l54ds02qd7jtu1ob35ae92d2ne0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKwB6Z7B8ZyeiNZIxNSmrdNRyTAFCP-Po"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "76949132515-v6637l54ds02qd7jtu1ob35ae92d2ne0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
