@@ -49,11 +49,12 @@
     <string name="createFamily">Семейное\nположение</string>
     <string name="createForm">Оставить анкету</string>
     <string-array name="spinnerSex">
+        <item>None</item>
         <item>М</item>
         <item>Ж</item>
-        <item>None</item>
     </string-array>
     <string-array name="spinnerFamily">
+        <item>None</item>
         <item>Женат</item>
         <item>Замужем</item>
         <item>Разведены</item>

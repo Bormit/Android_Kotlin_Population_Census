@@ -35,7 +35,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/buttonCreate"
+        android:id="@+id/buttonLocation"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginEnd="200dp"
@@ -75,7 +75,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonCreate">
+        app:layout_constraintTop_toBottomOf="@+id/buttonLocation">
 
         <TextView
             android:id="@+id/CreateSex"
