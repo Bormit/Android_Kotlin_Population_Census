@@ -14,11 +14,12 @@ import android.util.Log
 import android.widget.*
 
 import androidx.core.app.ActivityCompat
-
-
+import androidx.fragment.app.activityViewModels
+import androidx.lifecycle.LifecycleOwner
 
 
 class CreateForm : Fragment() {
+    private val dataModel : DataModel by activityViewModels()
     private val locationPermissionCode = 2
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -43,16 +44,16 @@ class CreateForm : Fragment() {
 
         buttonLocation.setOnClickListener {
             if (ActivityCompat.checkSelfPermission(
-                    context!!,
+                    requireContext(),
                     Manifest.permission.ACCESS_FINE_LOCATION
                 ) != PackageManager.PERMISSION_GRANTED &&
                 ActivityCompat.checkSelfPermission(
-                    context!!,
+                    requireContext(),
                     Manifest.permission.ACCESS_COARSE_LOCATION
                 ) != PackageManager.PERMISSION_GRANTED
             ) {
                 requestPermissions(
-                    activity!!, arrayOf(
+                    requireActivity(), arrayOf(
                         Manifest.permission.ACCESS_COARSE_LOCATION,
                         Manifest.permission.ACCESS_FINE_LOCATION
                     ),
@@ -64,6 +65,9 @@ class CreateForm : Fragment() {
             }
 
         }
+        dataModel.messageForCreateFragment.observe(activity as LifecycleOwner,{
+            createClc.text = it
+        })
 
         val arrayAdapterSex =
             context?.let { ArrayAdapter(it, android.R.layout.simple_spinner_item, spinnerArraySex) }
@@ -105,5 +109,4 @@ class CreateForm : Fragment() {
 
         return view
     }
-
 }

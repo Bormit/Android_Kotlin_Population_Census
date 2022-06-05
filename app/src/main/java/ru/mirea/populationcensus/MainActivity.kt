@@ -11,12 +11,18 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 import android.widget.Toast
+import androidx.activity.viewModels
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import java.util.*
+import androidx.annotation.NonNull
+
+
+
 
 class MainActivity : AppCompatActivity(), LocationListener {
+    private val dataModel: DataModel by viewModels()
     private lateinit var locationManager: LocationManager
     private val locationPermissionCode = 2
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,7 +30,6 @@ class MainActivity : AppCompatActivity(), LocationListener {
         setContentView(R.layout.activity_main)
 
         supportActionBar?.hide()
-
 
     }
     override fun onDestroy() {
@@ -47,7 +52,9 @@ class MainActivity : AppCompatActivity(), LocationListener {
     }
     override fun onLocationChanged(location: Location) {
         val adress = getAddress(location.latitude, location.longitude)
-        Toast.makeText(this, adress, Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, adress, Toast.LENGTH_SHORT)
+            .show()
+        dataModel.messageForCreateFragment.value = adress
     }
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
@@ -59,4 +66,9 @@ class MainActivity : AppCompatActivity(), LocationListener {
             }
         }
     }
+    override fun onProviderEnabled(provider: String) {}
+
+    override fun onProviderDisabled(provider: String) {}
+
+    override fun onStatusChanged(provider: String?, status: Int, extras: Bundle?) {}
 }
