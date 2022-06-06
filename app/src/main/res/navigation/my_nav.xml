@@ -61,7 +61,11 @@
         android:id="@+id/createForm2"
         android:name="ru.mirea.populationcensus.CreateForm"
         android:label="fragment_create_form"
-        tools:layout="@layout/fragment_create_form" />
+        tools:layout="@layout/fragment_create_form" >
+        <action
+            android:id="@+id/action_createForm2_to_bottomNavigation"
+            app:destination="@id/bottomNavigation" />
+    </fragment>
     <fragment
         android:id="@+id/profile"
         android:name="ru.mirea.populationcensus.Profile"

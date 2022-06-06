@@ -19,6 +19,7 @@ import android.widget.*
 import androidx.core.app.ActivityCompat
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.LifecycleOwner
+import androidx.navigation.fragment.findNavController
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 import org.mindrot.jbcrypt.BCrypt
@@ -52,6 +53,7 @@ class CreateForm : Fragment() {
         val createClc = view.findViewById<TextView>(R.id.createClc)
         val editAge = view.findViewById<EditText>(R.id.editAge)
         val createForm = view.findViewById<Button>(R.id.createForm)
+        val createClose = view.findViewById<ImageView>(R.id.createClose)
 
 //        val permissions = arrayOf<String>(Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION)
 
@@ -105,7 +107,9 @@ class CreateForm : Fragment() {
             }
         })
 
-
+        createClose.setOnClickListener {
+            findNavController().navigate(R.id.action_createForm2_to_bottomNavigation)
+        }
 
         val arrayAdapterSex =
             context?.let { ArrayAdapter(it, android.R.layout.simple_spinner_item, spinnerArraySex) }
