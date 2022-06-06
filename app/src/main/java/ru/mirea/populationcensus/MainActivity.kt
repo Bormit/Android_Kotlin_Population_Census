@@ -53,8 +53,8 @@ class MainActivity : AppCompatActivity(), LocationListener {
 
     override fun onLocationChanged(location: Location) {
         val address = getAddress(location.latitude, location.longitude)
-        Toast.makeText(this, address, Toast.LENGTH_SHORT)
-            .show()
+//        Toast.makeText(this, address, Toast.LENGTH_SHORT)
+//            .show()
         dataModel.messageForCreateFragment.value = address
     }
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {

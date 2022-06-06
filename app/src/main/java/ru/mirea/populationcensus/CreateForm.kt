@@ -53,7 +53,7 @@ class CreateForm : Fragment() {
         val editAge = view.findViewById<EditText>(R.id.editAge)
         val createForm = view.findViewById<Button>(R.id.createForm)
 
-        val permissions = arrayOf<String>(Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION)
+//        val permissions = arrayOf<String>(Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION)
 
         buttonLocation.setOnClickListener {
             if (ActivityCompat.checkSelfPermission(
@@ -115,8 +115,8 @@ class CreateForm : Fragment() {
             AdapterView.OnItemSelectedListener{
             override fun onItemSelected(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
                 if (spinnerArraySex[p2] != "None") {
-                    Toast.makeText(context, spinnerArraySex[p2], Toast.LENGTH_SHORT)
-                        .show()
+//                    Toast.makeText(context, spinnerArraySex[p2], Toast.LENGTH_SHORT)
+//                        .show()
                     sex = spinnerArraySex[p2]
                 }
             }
@@ -135,8 +135,8 @@ class CreateForm : Fragment() {
             AdapterView.OnItemSelectedListener{
             override fun onItemSelected(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
                 if (spinnerArrayFamily[p2] != "None") {
-                    Toast.makeText(context, spinnerArrayFamily[p2], Toast.LENGTH_SHORT)
-                        .show()
+//                    Toast.makeText(context, spinnerArrayFamily[p2], Toast.LENGTH_SHORT)
+//                        .show()
                     family = spinnerArrayFamily[p2]
                 }
             }
@@ -182,7 +182,7 @@ class CreateForm : Fragment() {
                                     database.child("person").child(login.toString())
                                         .child("family")
                                         .setValue(form.family)
-                                    
+
                                     Toast.makeText(context, "Успешно!", Toast.LENGTH_SHORT)
                                         .show()
                                 }
