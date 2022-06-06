@@ -48,13 +48,14 @@ class MainActivity : AppCompatActivity(), LocationListener {
     private fun getAddress(lat: Double, lng: Double): String {
         val geocoder = Geocoder(this, Locale.getDefault())
         val list = geocoder.getFromLocation(lat, lng, 1)
-        return list[0].getAddressLine(0)
+        return list[0].locality
     }
+
     override fun onLocationChanged(location: Location) {
-        val adress = getAddress(location.latitude, location.longitude)
-        Toast.makeText(this, adress, Toast.LENGTH_SHORT)
+        val address = getAddress(location.latitude, location.longitude)
+        Toast.makeText(this, address, Toast.LENGTH_SHORT)
             .show()
-        dataModel.messageForCreateFragment.value = adress
+        dataModel.messageForCreateFragment.value = address
     }
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
