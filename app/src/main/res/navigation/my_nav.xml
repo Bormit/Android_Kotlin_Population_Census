@@ -56,6 +56,9 @@
         <action
             android:id="@+id/action_bottomNavigation_to_regFragment"
             app:destination="@id/regFragment" />
+        <action
+            android:id="@+id/action_bottomNavigation_to_statsFragment2"
+            app:destination="@id/statsFragment2" />
     </fragment>
     <fragment
         android:id="@+id/createForm2"
@@ -113,5 +116,14 @@
             app:destination="@id/bottomNavigation"
             app:popUpTo="@id/userProfile2"
             app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/statsFragment2"
+        android:name="ru.mirea.populationcensus.StatsFragment"
+        android:label="fragment_stats"
+        tools:layout="@layout/fragment_stats" >
+        <action
+            android:id="@+id/action_statsFragment2_to_bottomNavigation"
+            app:destination="@id/bottomNavigation" />
     </fragment>
 </navigation>

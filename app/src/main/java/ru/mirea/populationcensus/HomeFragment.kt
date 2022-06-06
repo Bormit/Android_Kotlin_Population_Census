@@ -38,9 +38,19 @@ class HomeFragment : Fragment() {
         }
 
         val service = view.findViewById<ImageView>(R.id.image_service1)
+        val service2 = view.findViewById<ImageView>(R.id.image_service2)
+
         service.setOnClickListener {
             if (login != "Пользователь"){
                 findNavController().navigate(R.id.action_bottomNavigation_to_createForm2)
+            }else{
+                Toast.makeText(context, "Вы не вошли в аккаунт!", Toast.LENGTH_SHORT)
+                    .show()
+            }
+        }
+        service2.setOnClickListener {
+            if (login != "Пользователь"){
+                findNavController().navigate(R.id.action_bottomNavigation_to_statsFragment2)
             }else{
                 Toast.makeText(context, "Вы не вошли в аккаунт!", Toast.LENGTH_SHORT)
                     .show()

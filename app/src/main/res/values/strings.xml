@@ -69,5 +69,11 @@
     <string name="regAuth">Авторизоваться</string>
     <string name="WelcomeTitle">Welcome</string>
     <string name="WelcomeUser">Пользователь</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="stats">Статистка</string>
+    <string name="count">Количество анкет: </string>
+    <string name="count2">Количество пенсионеров: </string>
+    <string name="count3">Количество зарегистрированных городов: </string>
+    <string name="count4">Количество разведенных людей: </string>
+    <string name="count5">Количество мужчин: </string>
+    <string name="count6">Количество женщин: </string>
 </resources>
