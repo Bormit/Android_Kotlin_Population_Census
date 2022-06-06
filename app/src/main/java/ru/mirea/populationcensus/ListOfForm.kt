@@ -36,7 +36,23 @@ private lateinit var personArrayList : ArrayList<Person>
         searchView.clearFocus()
         searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener{
             override fun onQueryTextSubmit(p0: String?): Boolean {
-                TODO("Not yet implemented")
+                newArrayList.clear()
+                val searchText = p0?.toLowerCase(Locale.getDefault())
+                if (searchText!!.isNotEmpty()){
+                    personArrayList.forEach {
+                        if (it.city!!.toLowerCase(Locale.getDefault()).contains(searchText)){
+                            newArrayList.add(it)
+                        }
+                    }
+                    recyclerView.adapter!!.notifyDataSetChanged()
+                }
+                else{
+                    newArrayList.clear()
+                    newArrayList.addAll(personArrayList)
+                    recyclerView.adapter!!.notifyDataSetChanged()
+                }
+
+                return false
             }
 
             override fun onQueryTextChange(p0: String?): Boolean {
