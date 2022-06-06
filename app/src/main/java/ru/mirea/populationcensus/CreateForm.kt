@@ -33,6 +33,7 @@ class CreateForm : Fragment() {
     private var sex: String = ""
     private var age: String = ""
     private var family: String = ""
+    private var fio: String = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -157,8 +158,9 @@ class CreateForm : Fragment() {
             val database = Firebase.database.reference
 
             val form = Person(
-                city, sex, age, family
+                city, sex, age, family, fio
             )
+
             database.child("person").child(login.toString()).get().addOnSuccessListener {
                 if (it.value == null)
                 {
@@ -186,6 +188,12 @@ class CreateForm : Fragment() {
                                     database.child("person").child(login.toString())
                                         .child("family")
                                         .setValue(form.family)
+                                    database.child("users").child(login.toString())
+                                        .child("FIO").get().addOnSuccessListener{ it1 ->
+                                            database.child("person").child(login.toString())
+                                                .child("fio")
+                                                .setValue(it1.value.toString())
+                                    }
 
                                     Toast.makeText(context, "Успешно!", Toast.LENGTH_SHORT)
                                         .show()
